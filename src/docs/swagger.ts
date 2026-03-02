@@ -22,6 +22,12 @@ export const swaggerSpec = swaggerJSDoc({
             - dotenv - gerenciamento de vários 
             
             `,
-        }
-    }
+        },
+        servers: [
+            {
+                url: "http://localhost:3000",
+            },
+        ],
+    },
+    apis: ["./src/routes/*.ts"]
 })
