@@ -13,6 +13,7 @@ AppDataSource.initialize()
 
     app.listen(PORT, () => {
       console.log(`Servidor rodando em http://localhost:${PORT}`);
+      console.log(`Swagger ✅ http://localhost:${PORT}/docs`)
     });
   })
   .catch((err) => {
